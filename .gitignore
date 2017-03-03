@@ -1,3 +1,4 @@
 Gemfile.lock
 _site/
-
+.vagrant
+_config_dev.yml
