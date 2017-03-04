@@ -1,6 +1,7 @@
 [template.environment]
-  CLIENT_NAME = "Shoreline Media Marketing"
-  CUSTOM_LOGO = "//shorelinemedia.github.io/images/Shoreline-Media1.neuquant.png"
-  PRIMARY_COLOR = "#0099CC"
-  BG_COLOR = "#FFFF"
-  UP_MESSAGE = "<p>We are upgrading our website.  We'll be back online shortly.</p>"
+  SL9_CLIENT_NAME = "Shoreline Media Marketing"
+  SL9_CUSTOM_LOGO = "//shorelinemedia.github.io/images/Shoreline-Media1.neuquant.png"
+  SL9_PRIMARY_COLOR = "#0099CC"
+  SL9_BG_COLOR = "#587E9D"
+  SL9_UP_MESSAGE = "<p>We are upgrading our website.  We'll be back online shortly.</p>"
+  SL9_MAINTENANCE_MESSAGE = "We are currently upgrading our website"

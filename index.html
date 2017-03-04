@@ -3,5 +3,7 @@
 # Edit theme's home layout instead if you wanna make some changes
 # See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 layout: default
-title: Currenty undergoing maintenance
 ---
+
+{% assign up_message = site.env.SL9_UP_MESSAGE || default: "<p>We are upgrading our website.  We'll be back online shortly.</p>" %}
+<div class="up-message">{{ up_message }}</div>

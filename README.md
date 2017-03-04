@@ -32,5 +32,6 @@ to Netlify
 * CLIENT_NAME = "Shoreline Media Marketing"
 * CUSTOM_LOGO = "//shorelinemedia.github.io/images/Shoreline-Media1.neuquant.png"
 * PRIMARY_COLOR = "#0099CC"
-* BG_COLOR = "#FFFF"
-* UP_MESSAGE = "<p>We are upgrading our website.  We'll be back online shortly.</p>"
+* BG_COLOR = "#587E9D"
+* UP_MESSAGE = "`<p>We are upgrading our website.  We'll be back online shortly.</p>`"
+* SL9_MAINTENANCE_MESSAGE = "We are currently upgrading our website"

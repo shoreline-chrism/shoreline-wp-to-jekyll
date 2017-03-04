@@ -9,12 +9,15 @@ $padding: 15px;
 
 // App styles
 
+html, html * { box-sizing: border-box; }
+
 body,html { height: 100%; }
 .wrapper-flex {
+  min-height: 100%;
   display: flex;
   flex-direction: column;
 
-  & > div {
+  .site-header {
     flex: 1;
     display: flex;
     flex-direction: column;
