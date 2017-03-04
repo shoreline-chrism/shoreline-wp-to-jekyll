@@ -1,5 +1,5 @@
 [build]
-  Command = "bundle install && bundle exec jekyll build"
+  Command = "jekyll build"
   Publish = "_site"
 
 [template.environment]
