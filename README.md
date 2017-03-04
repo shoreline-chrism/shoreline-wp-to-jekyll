@@ -17,3 +17,20 @@ cd /vagrant && ./develop.sh
 ### Quick deploy to Netlify
 
 Use the button below to deploy this site to netlify
+
+<!-- Markdown snippet -->
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/shorelinemedia/shoreline-maintenance)
+
+### Environment Variables
+We use environment variables to quickly fill in logo and client information when
+working locally or deploying to netlify.  The `develop.sh` script applies these
+automatically.
+
+Here is a list of current environment variables you can set locally or when deploying
+to Netlify
+
+* CLIENT_NAME = "Shoreline Media Marketing"
+* CUSTOM_LOGO = "//shorelinemedia.github.io/images/Shoreline-Media1.neuquant.png"
+* PRIMARY_COLOR = "#0099CC"
+* BG_COLOR = "#FFFF"
+* UP_MESSAGE = "<p>We are upgrading our website.  We'll be back online shortly.</p>"
