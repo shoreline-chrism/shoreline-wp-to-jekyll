@@ -1,0 +1,32 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+@import "minima";
+
+$padding: 15px;
+
+// App styles
+
+body,html { height: 100%; }
+.wrapper-flex {
+  display: flex;
+  flex-direction: column;
+
+  & > div {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+  }
+}
+.site-title { float: none; }
+.site-header {
+  padding-top: $padding*2;
+  border-bottom: 0;
+}
+.site-footer { border-top: 0; }
+.wrapper { text-align: center; }
+.logo-image { margin-bottom: $padding; }

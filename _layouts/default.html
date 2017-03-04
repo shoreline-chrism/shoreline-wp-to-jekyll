@@ -1,19 +1,28 @@
+{% assign primary_color = site.env.SL9_PRIMARY_COLOR || default: "#84C466" %}
+{% assign bg_color = site.env.SL9_BG_COLOR || default: "#FFFFFF" %}
+{% assign custom_logo = site.env.SL9_CUSTOM_LOGO || default: false %}
+{% assign client_name = site.env.SL9_CLIENT_NAME || default: "Shoreline Media Marketing" %}
+{% assign up_message = site.env.SL9_UP_MESSAGE || default: "<p>We are upgrading our website.  We'll be back online shortly.</p>" %}
 <!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+<html lang="{{ page.lang | default: site.lang | default: "en" }}" style="background-color: {{ bg_color }};">
 
   {% include head.html %}
 
-  <body>
+  <body style="background-color: {{ bg_color }};">
 
+    <div class="wrapper-flex">
     {% include header.html %}
 
     <main class="page-content" aria-label="Content">
       <div class="wrapper">
+
         {{ content }}
       </div>
     </main>
 
     {% include footer.html %}
+
+    </div>
 
   </body>
 

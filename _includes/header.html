@@ -1,9 +1,16 @@
-<header class="site-header" role="banner">
+<header class="site-header" role="banner" style="border-top-color: {{ primary_color }};">
 
   <div class="wrapper">
 
-    <a class="site-title" href="{{ "/" | relative_url}}">{{ site.title | escape }}</a>
 
+    <a class="site-title" href="{{ "/" | relative_url}}">
+      {% if custom_logo %}
+        <h1><img src="{{ custom_logo }}" alt="{{ client_name }}" class="logo-image"/></h1>
+      {% else %}
+        <h1>{{ client_name }}</h1>
+      {% endif %}
+    </a>
+    <div class="up-message">{{ up_message }}</div>
   </div>
 
 </header>

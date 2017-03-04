@@ -30,6 +30,7 @@ gems:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-paginate
+  - octopress-autoprefixer
 
 
 
@@ -54,5 +55,6 @@ exclude:
   - "provision.sh"
   - "develop.sh"
   - "Vagrantfile"
+  - "netlify.toml"
   - "bower_components"
   - "index-critical.html"
