@@ -2,7 +2,6 @@
 source "https://rubygems.org"
 
 gem "jekyll"
-gem "foundation-rails"
 gem 'octopress-autoprefixer'
 
 # This is the default theme for new Jekyll sites. You may change this to anything you like.
