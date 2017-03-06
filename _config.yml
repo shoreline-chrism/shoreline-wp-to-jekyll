@@ -54,6 +54,7 @@ exclude:
   - "project.sh"
   - "provision.sh"
   - "develop.sh"
+  - "develop.md"
   - "Vagrantfile"
   - "netlify.toml"
   - "bower_components"
