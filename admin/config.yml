@@ -1,5 +1,4 @@
 backend:
-  name: test-repo
   name: github
   repo: shoreline-chrism/shoreline-maintenance # Path to your Github repository
   branch: master # Branch to update
