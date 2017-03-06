@@ -1,9 +1,9 @@
 {% assign primary_color = site.env.SL9_PRIMARY_COLOR || default: "blue" %}
-{% assign bg_color = site.env.SL9_BG_COLOR || default: "#FFFFFF" %}
+{% assign bg_color = site.env.SL9_BG_COLOR || default: "#dddddd" %}
 {% assign custom_logo = site.env.SL9_CUSTOM_LOGO || default: false %}
 {% assign client_name = site.env.SL9_CLIENT_NAME || default: "Shoreline Media Marketing" %}
 {% assign maintenance_message = site.env.SL9_MAINTENANCE_MESSAGE || default: "We are currently upgrading our website" %}
-{% assign up_message = site.env.SL9_UP_MESSAGE || default: "<p>We are upgrading our website.  We'll be back online shortly.</p>" %}
+{% assign up_message = site.env.SL9_UP_MESSAGE || default: "<p>We apologize for the inconvenience. We'll be back online shortly. In the meantime, please call <a href='tel:888-591-8205'>888-591-8205</a> if you need immediate assistance.</p>" %}
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: "en" }}" style="background-color: {{ bg_color }};">
 
@@ -17,7 +17,10 @@
     <main class="page-content" aria-label="Content">
       <div class="wrapper">
 
-        {{ content }}
+        <div class="panel">
+          <h2 class="text-center">{{ maintenance_message }}</h2>
+          {{ content }}
+        </div>
 
       </div>
     </main>
