@@ -1,37 +1,42 @@
-### Dependencies
+# Site Maintenance website
 
-* Oracle VM Virtualbox
-* Vagrant (http://vagrantup.com)
-
-### Dev
-
-1. Clone Repo into `~/yourprojectdir` (change yourprojectdir)
-2. Change into directory `cd ~/yourprojectdir`
-3. Bring up VM and install dependencies with `vagrant up`
-4. SSH into server: `vagrant ssh`
-5. Change director to /vagrant and run develop shell script:
-````
-cd /vagrant && ./develop.sh
-````
+Should our site or client website's server go down for an extended period or is
+down without an ETA on restoration we can quickly launch this website
+maintenance page hosted on Netlify and 302 redirect the primary domain to this
+maintenance site until the issues are resolved.
 
 ### Quick deploy to Netlify
 
-Use the button below to deploy this site to netlify
+Use the button below to deploy this site to netlify.  Before you deploy you can
+set environment variables for things like the logo url, primary color,
+background color, client name, etc.
 
 <!-- Markdown snippet -->
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/shorelinemedia/shoreline-maintenance)
 
-### Environment Variables
-We use environment variables to quickly fill in logo and client information when
-working locally or deploying to netlify.  The `develop.sh` script applies these
-automatically.
+### Adding a logo
 
-Here is a list of current environment variables you can set locally or when deploying
-to Netlify
+Before deploying, uploading a logo to imgur.com might be a quick way to get logo image on the web
+and not being served from the affected server. Once you upload to imgur, grab the
+ID of the image and change the logo url to `//i.imgur.com/YOURID.extension`
+and change YOURID to the imgur ID and the `.extension` to `.png`, `.jpg`, etc
 
-* CLIENT_NAME = "Shoreline Media Marketing"
-* CUSTOM_LOGO = "//shorelinemedia.github.io/images/Shoreline-Media1.neuquant.png"
-* PRIMARY_COLOR = "#0099CC"
-* BG_COLOR = "#587E9D"
-* UP_MESSAGE = "`<p>We are upgrading our website.  We'll be back online shortly.</p>`"
-* SL9_MAINTENANCE_MESSAGE = "We are currently upgrading our website"
+If you don't have a logo that is publicly accessible during your initial commit, you can add a logo to this site/project directly:
+
+1. After initial deployment on netlify, netlify creates a copy of the project in
+   in your github account. Login to your github account and visit the project at
+   [github.com](http://github.com)
+1. Navigate to the `/assets/uploads/` folder on gitub and click the *Upload files* button
+1. Upload a logo to this folder (We'll assume it's `logo.png`)
+    a. Adding a file to your repository on github will trigger a build on Netlify
+       which makes it available on your website in just a few minutes.
+1. Login to [Netlify](https://app.netlify.com) and click your maintenance site
+1. Navigate to *Settings* tab if you aren't there already
+1. Edit the *Build Environment* settings and update the SL9_CUSTOM_LOGO to your
+   new logo url: `/assets/uploads/logo.png`
+1. Goto *Deploys* tab on netlify and click *Trigger Build* which will trigger a new
+   build using your new logo url
+
+#### Development
+
+To develop this site with Jekyll [read the development notes](develop.md).
