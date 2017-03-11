@@ -1,5 +1,5 @@
 {
-  "name": "shoreline-jekyll-site-down",
+  "name": "shoreline-wp-to-jekyll",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,9 +8,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@bitbucket.org/shorelinemedia/shoreline-jekyll-site-down.git"
+    "url": "git+ssh://git@bitbucket.org/shorelinemedia/shoreline-shoreline-wp-to-jekyll.git"
   },
   "author": "",
   "license": "ISC",
-  "homepage": "https://bitbucket.org/shorelinemedia/shoreline-jekyll-site-down#readme"
+  "homepage": "https://bitbucket.org/shorelinemedia/shoreline-shoreline-wp-to-jekyll#readme"
 }

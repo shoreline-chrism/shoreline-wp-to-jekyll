@@ -1,23 +1,25 @@
-# Site Maintenance website
+# Wordpress to Jekyll project
 
-Should our site or client website's server go down for an extended period or is
-down without an ETA on restoration we can quickly launch this website
-maintenance page hosted on Netlify and 302 redirect the primary domain to this
-maintenance site until the issues are resolved.
+Use Wordpress as a headless CMS-- hosted at a private subdomained Wordpress install
+and hidden from search engines, users can login to Wordpress to add/update posts
+and the Wordpress posts will be synced to a Jekyll site hosted on Netlify, CloudCannon
+or a similar continuous deployment host to take advantage of static HTML pages and
+constantly synced posts and content from Wordpress
 
 ### What you need
 
+1. A Wordpress site hosted somewhere that can serve as a place for staff or editors
+   to use an editorial workflow to create posts
+   a. WP Plugins installed on your headless WP site: [WP-Markdown](https://wordpress.org/plugins/wp-markdown/), [WP Github Sync](https://wordpress.org/plugins/wp-github-sync/)
 1. A free [github account](https://github.com/join)
 1. A free [Netlify account](https://app.netlify.com/signup)
 
 ### Quick deploy to Netlify
 
-Use the button below to deploy this site to netlify.  Before you deploy you can
-set environment variables for things like the logo url, primary color,
-background color, client name, etc.
+Use the button below to deploy this site to netlify.  
 
 <!-- Markdown snippet -->
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/shorelinemedia/shoreline-maintenance)
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/shorelinemedia/shoreline-wp-to-jekyll)
 
 ### Adding a logo
 
