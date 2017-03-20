@@ -11,4 +11,8 @@ published: true
 ---
 Testing to see if we can turn off page syncing through Customizer setting. Adding another line.
 
-And another one. Or another one. And another line. Does that shortcode work?
+And another one. Or another one. And another line.
+
+[wpghs target='view' type='link' text='Here is my post on GitHub']
+
+Does that shortcode work?
