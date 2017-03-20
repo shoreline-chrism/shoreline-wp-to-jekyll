@@ -9,4 +9,4 @@ permalink: >
   http://cms.shoreline.media/another-test-page/
 published: true
 ---
-Testing to see if we can turn off page syncing through Customizer setting. Adding another line.
+Testing to see if we can turn off page syncing through Customizer setting. Adding another line. And another one.
