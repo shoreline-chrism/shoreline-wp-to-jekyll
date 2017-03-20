@@ -9,4 +9,4 @@ permalink: >
   http://cms.shoreline.media/2017/03/20/hello-world/
 published: true
 ---
-This is my custom post
+This is my custom post why isn't it published?
