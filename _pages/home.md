@@ -5,7 +5,7 @@ author: shoreline-cms-admin
 post_date: 2017-03-21 14:46:28
 post_excerpt: ""
 layout: page
-permalink: http://cms.shoreline.media/home/
+permalink: http://cms.shoreline.media/
 published: true
 ---
-Home page content here.
+Home page content here. Testing. And again.
