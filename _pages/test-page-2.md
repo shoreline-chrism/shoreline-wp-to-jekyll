@@ -8,4 +8,4 @@ layout: page
 permalink: http://cms.shoreline.media/test-page-2/
 published: true
 ---
-Another test page
+Another test page. Another one.
