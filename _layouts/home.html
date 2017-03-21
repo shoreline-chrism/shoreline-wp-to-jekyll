@@ -1,0 +1,16 @@
+---
+layout: default
+---
+{% assign custom_logo = site.env.SL9_CUSTOM_LOGO || default: false %}
+{% assign client_name = site.env.SL9_CLIENT_NAME || default: "Shoreline Media Marketing" %}
+{% assign maintenance_message = site.env.SL9_MAINTENANCE_MESSAGE || default: "We are currently upgrading our website" %}
+{% assign up_message = site.env.SL9_UP_MESSAGE || default: "<p>We apologize for the inconvenience. We'll be back online shortly. In the meantime, please call <a href='tel:888-591-8205'>888-591-8205</a> if you need immediate assistance.</p>" %}
+
+
+
+  {{ content }}
+
+  <div class="panel">
+    <h2 class="text-center">{{ maintenance_message }}</h2>
+    <div class="up-message">{{ up_message }}</div>
+  </div>
