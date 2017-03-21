@@ -8,5 +8,17 @@ layout: post
 permalink: >
   http://cms.shoreline.media/2017/03/21/hello-world/
 published: true
+categories:
+  - 
+    term_id: 1
+    name: Uncategorized
+    slug: uncategorized
+    term_group: 0
+    term_taxonomy_id: 1
+    taxonomy: category
+    description: ""
+    parent: 0
+    count: 1
+    filter: raw
 ---
-First test post. Test. Test. Test. Test. TEst.
+First test post. Test. Test. Test. Test. TEst. Test.
