@@ -12,15 +12,14 @@
   <body style="background-color: {{ bg_color }};">
 
     <div class="wrapper-flex">
-    {% include header.html %}
+      {% if page.layout == 'home' %}
+        {% include header.html %}
+      {% endif %}
 
     <main class="page-content" aria-label="Content">
       <div class="wrapper">
 
-        <div class="panel">
-          <h2 class="text-center">{{ maintenance_message }}</h2>
-          {{ content }}
-        </div>
+        {{ content }}
 
       </div>
     </main>
