@@ -32,13 +32,16 @@ gems:
   - jekyll-paginate
   - octopress-autoprefixer
 
-
-
-
 # Outputting
-permalink:        "/blog/:year/:title/"
-paginate_path:    "/blog/page:num"
+permalink:        "/:collection/:categories/:year/:month/:day/:title/"
+paginate_path:    "/:collection/:categories/page:num"
 paginate:         5
+
+# Collections
+collections:
+  pages:
+    output: true
+    permalink: "/:path/"
 
 # Exclude files from jekyll build
 exclude:
