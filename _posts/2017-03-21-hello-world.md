@@ -8,6 +8,6 @@ layout: post
 permalink: >
   http://cms.shoreline.media/2017/03/21/hello-world/
 published: true
-categories: uncategorized
+categories: new-category-nameuncategorized
 ---
 First test post. Test. Test. Test. Test. TEst. Test. Test.
