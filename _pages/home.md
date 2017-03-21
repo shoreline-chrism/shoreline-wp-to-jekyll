@@ -8,4 +8,4 @@ layout: page
 permalink: http://cms.shoreline.media/
 published: true
 ---
-Home page content here. Testing. And again. And again. More content.
+Home page content here. Testing. And again. And again. More content. More content here.
