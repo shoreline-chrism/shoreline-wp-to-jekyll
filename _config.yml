@@ -42,6 +42,9 @@ collections:
   pages:
     output: true
     permalink: "/:path/"
+  docs:
+    output: true
+    permalink: "/:collection/:name/"
 
 # Exclude files from jekyll build
 exclude:
