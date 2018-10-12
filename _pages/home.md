@@ -8,4 +8,4 @@ permalink: index.html
 published: true
 post_date: 2017-03-21 14:46:28
 ---
-Home page content
+Home page content is now updated
